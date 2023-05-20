@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    #earth {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #2e3d49;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #plane {
+      width: 80px;
+      height: 20px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: circling 4s linear infinite;
+    }
+
+    @keyframes circling {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="earth"></div>
+  <div id="plane"></div>
+</body>
+</html>
